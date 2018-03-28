@@ -1,0 +1,42 @@
+---
+# 导航菜单
+# 1.系统管理
+#- !com.cqzg168.scm.domain.NavMenu
+ # cname: 系统管理1
+  #icon: fa fa-cogs
+ # url: #
+  #children:
+  #- !com.cqzg168.scm.domain.NavMenu
+  #  cname: 系统用户
+   # icon: fa fa-users
+   # url: /manager/index
+   # permission: manager:index
+ # - !com.cqzg168.scm.domain.NavMenu
+  #  cname: 角色权限
+  #  icon: fa fa-user-circle
+  #  url: /role/index
+  #  permission: role:index
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 商品列表
+  icon: fa fa-fw fa-shopping-cart
+  url: /goods/index
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 采购记录
+  icon: fa fa-fw fa-book
+  url: /order/index
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 收货地址管理
+  icon: fa fa-fw fa-reorder
+  url: /receivingAddress/index
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 个人信息
+  icon: fa fa-fw fa-pencil-square
+  url: /baseInfo
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 修改密码
+  icon: fa fa-fw fa-lock
+  url: /password
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 安全退出
+  icon: fa fa-fw fa-sign-out
+  url: /logout

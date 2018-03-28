@@ -1,0 +1,22 @@
+archivesBaseName = 'scm-core'
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-configuration-processor")
+    compile("org.springframework.boot:spring-boot-starter-mobile")
+
+    compile("org.json:org.json:2.0")
+    compile("com.fasterxml.jackson.core:jackson-annotations:2.8.7")
+    compile("com.esotericsoftware.yamlbeans:yamlbeans:1.11")
+    compile("joda-time:joda-time:2.9.9")
+
+    compile("org.apache.shiro:shiro-core:${shiroVersion}")
+    compile("org.apache.shiro:shiro-web:${shiroVersion}")
+    compile("org.apache.shiro:shiro-spring:${shiroVersion}")
+    compile("org.apache.shiro:shiro-ehcache:${shiroVersion}")
+    compile("org.apache.cxf:cxf-spring-boot-starter-jaxws:3.1.11")
+    compile("org.apache.poi:poi-ooxml:3.16")
+    runtime('mysql:mysql-connector-java')
+}
+

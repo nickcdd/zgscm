@@ -1,0 +1,107 @@
+---
+# 权限配置表
+# 管理员管理
+- !com.cqzg168.scm.domain.Permission
+  module: manager
+  cname: 管理员管理
+  permissions:
+    index: 管理员列表
+    save: 编辑管理员
+    remove: 删除管理员
+# 角色管理
+- !com.cqzg168.scm.domain.Permission
+  module: role
+  cname: 角色管理
+  permissions:
+    index: 角色列表
+    save: 编辑角色
+    remove: 删除角色
+# 供应商管理
+- !com.cqzg168.scm.domain.Permission
+  module: supplier
+  cname: 供应商管理
+  permissions:
+    index: 供应商列表
+    save: 编辑供应商
+    remove: 删除供应商
+
+# 商户管理
+- !com.cqzg168.scm.domain.Permission
+  module: shopKeeper
+  cname: 商户管理
+  permissions:
+    index: 商户列表
+    save: 编辑商户
+    remove: 删除商户
+    editReseller: 分销商管理
+# 分销商管理
+- !com.cqzg168.scm.domain.Permission
+  module: reseller
+  cname: 分销商管理
+  permissions:
+    index: 分销商列表
+    save: 编辑分销商
+    remove: 删除分销商
+# 提现管理
+- !com.cqzg168.scm.domain.Permission
+  module: withdrawApply
+  cname: 提现管理
+  permissions:
+    index: 提现申请列表
+    save: 编辑提现申请
+    remove: 删除提现申请
+# 商品管理
+- !com.cqzg168.scm.domain.Permission
+  module: goods
+  cname: 商品管理
+  permissions:
+#    managerBaseInfo: 商品基本管理
+#    reviewBasiInfo: 商品基本信息审核
+#    managerSupplier: 商品供应商管理
+#    managerPrice: 商品价格管理
+#    reviewPrice: 商品价格审核
+#    managerGoods: 商品上下架管理
+    managerCategory: 商品类别管理
+    reviewGoods: 商品审核
+# 订单管理
+- !com.cqzg168.scm.domain.Permission
+  module: orders
+  cname: 订单管理管理
+  permissions:
+    index: 订单列表列表
+    save: 编辑订单
+    remove: 删除订单
+    reviewRefund: 退款审核
+    ordersStatistics: 订单统计
+    sendOrders: 平台商品发货
+    pickingGoods: 平台商品拣货
+    customerService: 售后服务
+# 商户管理
+- !com.cqzg168.scm.domain.Permission
+  module: wsdl
+  cname: 运通刷新wsdl
+  permissions:
+    reload: 刷新
+# 仓储管理
+- !com.cqzg168.scm.domain.Permission
+  module: storage
+  cname: 仓储管理
+  permissions:
+    index: 仓储列表
+    save: 编辑仓储
+    remove: 删除仓储
+# 库存管理
+- !com.cqzg168.scm.domain.Permission
+  module: inventory
+  cname: 库存管理
+  permissions:
+    index: 库存列表
+    save: 编辑库存
+
+# 自营管理
+- !com.cqzg168.scm.domain.Permission
+  module: selfSupport
+  cname: 自营管理
+  permissions:
+    goodsManager: 商品管理
+    publishManager: 商品上下架管理

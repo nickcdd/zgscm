@@ -1,0 +1,82 @@
+html, body, .wrapper {
+    height: 100% !important;
+}
+
+.skin-yellow-light .main-header .logo, .skin-yellow-light .main-header .navbar {
+    background-color: #fc5b01;
+}
+
+.box-footer > .btn:not(:first-child) {
+    margin-right: 20px;
+}
+
+.box-header .btn {
+    margin-right: 10px;
+}
+
+.flash-alert {
+    position: fixed;
+    left: 10%;
+    right: 10%;
+    top: 5%;
+    z-index: 9999;
+}
+
+div.form-horizontal .form-control {
+    width: 100% !important;
+}
+
+.middle-certer {
+    vertical-align: middle !important;
+}
+
+.push-notification {
+    position: fixed;
+    bottom: -500px;
+    right: 15px;
+    width: 200px;
+}
+
+.push-notification span {
+    color: #FF0000;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.table .card-view span.title {
+    width: 30%;
+    vertical-align: top;
+}
+
+.table .card-view span.value {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    width: 70%;
+}
+
+table thead th {
+    text-align: center;
+}
+
+tr td {
+    vertical-align: middle !important;
+}
+
+tr td ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.star-flag {
+    color: red;
+    margin-right: 10px;
+}
+
+.toolbar {
+    left: -15px;
+}
+
+.nav > li.disabled > a {
+    color: #ccc !important;
+}

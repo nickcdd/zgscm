@@ -1,0 +1,34 @@
+---
+# 导航菜单
+# 1.系统管理
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 订单管理
+  icon: fa fa-users
+  url: #
+  children:
+    - !com.cqzg168.scm.domain.NavMenu
+      cname: 订单列表
+      icon: fa fa-fw fa-users
+      url: /orders/index
+    - !com.cqzg168.scm.domain.NavMenu
+      cname: 商品退换货
+      icon: fa fa-fw fa-users
+      url: /customerService/index
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 商品管理
+  icon: fa fa-fw fa-cogs
+  url: #
+  children:
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 商品列表
+    icon: fa fa-fw fa-users
+    url: /goods/goodsInfo/index
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 商品上下架
+    icon: fa fa-fw fa-users
+    url: /goods/publishGoods/index
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 库存列表
+    icon: fa fa-fw fa-user-circle
+    url: /inventory/index
+

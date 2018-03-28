@@ -1,0 +1,28 @@
+apply plugin: 'war'
+
+war {
+    baseName = 'scm-shopkeeper'
+//	version = '${version}'
+}
+
+dependencies {
+    compile project(":core")
+
+    compile("org.springframework.boot:spring-boot-starter-aop")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-freemarker")
+    compile("org.springframework.boot:spring-boot-starter-tomcat")
+    compile("org.springframework.boot:spring-boot-starter-cache")
+
+    compile("org.apache.shiro:shiro-core:${shiroVersion}")
+    compile("org.apache.shiro:shiro-web:${shiroVersion}")
+    compile("org.apache.shiro:shiro-spring:${shiroVersion}")
+    compile("org.apache.shiro:shiro-ehcache:${shiroVersion}")
+
+    compile("org.sitemesh:sitemesh:3.0.1")
+    compile("org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16")
+    compile("com.google.zxing:core:3.2.0")
+    compile("com.google.zxing:javase:3.2.0")
+
+    runtime('mysql:mysql-connector-java')
+}

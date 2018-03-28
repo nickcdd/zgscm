@@ -1,0 +1,24 @@
+---
+# 地址拦截列表
+- url: /logout
+  type: logout
+- url: /captcha
+  type: anon
+- url: /favicon.ico
+  type: anon
+- url: /assets/**
+  type: anon
+- url: /attachment/**
+  type: authc
+- url: /cashier/**
+  type: anon
+- url: /favicon*
+  type: anon
+- url: /validate
+  type: anon
+- url: /smsLogin
+  type: anon
+- url: /shopping/notify
+  type: anon
+- url: /**
+  type: authc

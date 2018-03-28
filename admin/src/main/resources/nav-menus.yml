@@ -1,0 +1,159 @@
+---
+# 导航菜单
+# 1.系统管理
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 系统管理
+  icon: fa fa-fw fa-cogs
+  url: #
+  children:
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 系统用户
+    icon: fa fa-fw fa-users
+    url: /manager/index
+    permission: manager:index
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 角色权限
+    icon: fa fa-fw fa-user-circle
+    url: /role/index
+    permission: role:index
+# 2.供应商管理
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 供应商帐号管理
+    icon: fa fa-fw fa-truck
+    url: /supplier/index
+    permission: supplier:index
+# 3.商户管理
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 商户帐号管理
+    icon: fa fa-fw fa-building
+    url: /shopKeeper/index
+    permission: shopKeeper:index
+# 4.分销商管理
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 分销商帐号管理
+    icon: fa fa-fw fa-group
+    url: /reseller/index
+    permission: reseller:index
+# 8.商品管理
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 商品管理
+  icon: fa fa-fw fa-cubes
+  url: #
+  children:
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 类别管理
+    icon: fa fa-fw fa-folder-open
+    url: /goods/goodsCategory/index
+    permission: goods:managerCategory
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 商品审核管理
+    icon: fa fa-fw fa-folder-open
+    url: /reviewGoods/index
+    permission: goods:reviewGoods
+#  - !com.cqzg168.scm.domain.NavMenu
+#    cname: 基本信息管理
+#    icon: fa fa-fw fa-info-circle
+#    url: /goods/baseInfo/index
+#    permission: goods:managerBaseInfo
+#  - !com.cqzg168.scm.domain.NavMenu
+#    cname: 基本信息审核
+#    icon: fa fa-fw fa-pencil
+#    url: /goods/reviewBaseInfo/index
+#    permission: goods:reviewBasiInfo
+#  - !com.cqzg168.scm.domain.NavMenu
+#    cname: 供应商管理
+#    icon: fa fa-fw fa-truck
+#    url: /goods/goodsSupplier/index
+#    permission: goods:managerSupplier
+#  - !com.cqzg168.scm.domain.NavMenu
+#    cname: 价格管理
+#    icon: fa fa-fw fa-money
+#    url: /goods/goodsPrice/index
+#    permission: goods:managerPrice
+#  - !com.cqzg168.scm.domain.NavMenu
+#    cname: 价格审核
+#    icon: fa fa-fw fa-pencil
+#    url: /goods/reviewPrice/index
+#    permission: goods:reviewPrice
+#  - !com.cqzg168.scm.domain.NavMenu
+#    cname: 上下架管理
+#    icon: fa fa-fw fa-shopping-cart
+#    url: /goods/publishGoods/index
+#    permission: goods:managerGoods
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 订单管理
+  icon: fa fa-fw fa-list-ul
+  url: #
+  children:
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 订单列表
+    icon: fa fa-fw fa-list
+    url: /orders/index
+    permission: orders:index
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 拣货
+    icon: fa fa-fw fa-check-square-o
+    url: /pickingGoods/index
+    permission: orders:pickingGoods
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 发货
+    icon: fa fa-fw fa-truck
+    url: /sendOrders/index
+    permission: orders:sendOrders
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 售后
+    icon: fa fa-fw fa-phone
+    url: /customerService/index
+    permission: orders:customerService
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 统计
+    icon: fa fa-fw fa-table
+    url: /ordersStatistics/index
+    permission: orders:ordersStatistics
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 财务管理
+  icon: fa fa-fw fa-bank
+  url: #
+  children:
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 提现审核
+    icon: fa fa-fw fa-money
+    url: /withdrawApply/index
+    permission: withdrawApply:index
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 退款审核
+    icon: fa fa-fw fa-money
+    url: /orders/refund/index
+    permission: orders:reviewRefund
+##9库存管理
+#- !com.cqzg168.scm.domain.NavMenu
+#  cname: 库存管理
+#  icon: fa fa-fw fa-bank
+#  url: #
+#  children:
+#  - !com.cqzg168.scm.domain.NavMenu
+#    cname: 仓储
+#    icon: fa fa-fw fa-money
+#    url: /storage/index
+#    permission: storage:index
+#  - !com.cqzg168.scm.domain.NavMenu
+#    cname: 库存
+#    icon: fa fa-fw fa-money
+#    url: /inventory/index
+#    permission: inventory:index
+  #10自营管理
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 自营管理
+  icon: fa fa-fw fa-bank
+  url: #
+  children:
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 自营商品信息
+    icon: fa fa-fw fa-money
+    url: /selfSupportGoods/goodsInfo/index
+    permission: selfSupport:goodsManager
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 自营商品上下架
+    icon: fa fa-fw fa-money
+    url: /selfSupportGoods/publishGoods/index
+    permission: selfSupport:publishManager

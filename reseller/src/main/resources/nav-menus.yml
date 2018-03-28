@@ -1,0 +1,18 @@
+---
+# 导航菜单
+# 1.系统管理
+- !com.cqzg168.scm.domain.NavMenu
+  cname: 系统管理
+  icon: fa fa-cogs
+  url: #
+  children:
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 系统用户
+    icon: fa fa-users
+    url: /manager/index
+    permission: manager:index
+  - !com.cqzg168.scm.domain.NavMenu
+    cname: 角色权限
+    icon: fa fa-user-circle
+    url: /role/index
+    permission: role:index
